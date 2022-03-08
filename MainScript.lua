@@ -489,7 +489,8 @@ if pcall(function() readfile("vape/CustomModules/"..game.PlaceId..".vape") end) 
 	loadstring(readfile("vape/CustomModules/"..game.PlaceId..".vape"))()
 else
 	--loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/67b00fcff6b14ba1cbdeed00fa58fee13af7677d/AnyGame.vape", true))()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/InkognoitoCurry/Swift-V4/06d608d99be1a04f1243b1ff64b26b7e64ba6a36/AnyGame.vape", true))()
+  	--loadstring(game:HttpGet("https://raw.githubusercontent.com/InkognoitoCurry/Swift-V4/06d608d99be1a04f1243b1ff64b26b7e64ba6a36/AnyGame.vape", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/InkognoitoCurry/SwiftV4/main/AnyGame.lua", true))()
 end
 
 GuiLibrary["LoadSettings"]()
