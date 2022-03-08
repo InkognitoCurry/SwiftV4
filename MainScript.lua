@@ -1,3 +1,10 @@
+--
+-- Full Credits to 7GrandDadPGN. I just modified this script for myself.
+--
+
+
+
+
 --[[
 if shared.VapeExecuted then
 	return
@@ -25,7 +32,7 @@ local Render = GuiLibrary.CreateWindow("Render", "👁", UDim2.new(0, 177, 0, 6)
 local Utility = GuiLibrary.CreateWindow("Utility", "🛠", UDim2.new(0, 177, 0, 6), false)
 local World = GuiLibrary.CreateWindow("World", "🌎", UDim2.new(0, 177, 0, 6), false)
 local Other = GuiLibrary.CreateWindow("Other", "❔", UDim2.new(0, 177, 0, 6), false)
-local Settings = GuiLibrary.CreateWindow("Settings", "⚙", UDim2.new(0, 177, 0, 6), false)
+local Settings = GuiLibrary.CreateWindow("Settings", "⚙", UDim2.new), false)
 local Friends = GuiLibrary.CreateWindow("Friends", "👨‍👦", UDim2.new(0, 177, 0, 6), false)
 local Search = GuiLibrary.CreateWindow("Search", "🔍", UDim2.new(0, 177, 0, 6), false)
 local TextGui = GuiLibrary.CreateCustomWindow("Text GUI", "📄", UDim2.new(0, 177, 0, 6), false)
