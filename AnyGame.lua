@@ -612,9 +612,39 @@ local Hitbox =  GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].Crea
 hitboxexpand = Hitbox.CreateSlider({
 	["Name"] = "Expand amount",
 	["Min"] = 1,
-	["Max"] = 30,
+	["Max"] = 60,
 	["Function"] = function(val) end
 })
+
+
+
+
+
+
+local bednukerrange = {["Value"] = 1}
+local BedNuker = {["Enabled"] = false}
+BedNuker = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton("BedNuker", function()
+	spawn(function()
+		repeat
+			wait(0.2)
+			local tab = game.Workspace.Map.Blocks:GetChildren()
+			for i = 1, #tab do
+				local obj = tab[i]
+				pcall(function()
+					if obj.Name == "bed" and (obj.Name:match(lplr.Team.Name:lower()) == nil) and (lplr.Character.HumanoidRootPart.Position - obj.Position).magnitude <= 20 then
+						bedwars["breakBlock"](obj.Position)
+					end
+				end)
+			end
+		until BedNuker["Enabled"] == false
+	end)
+end, function() end, true)
+bednukerrange = BedNuker.CreateSlider("Break range", 1, 20, function(val) end)
+
+
+
+
+
 
 local killauraaps = {["GetRandomValue"] = function() return 1 end}
 local killaurarange = {["Value"] = 1}
