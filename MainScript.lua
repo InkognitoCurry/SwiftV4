@@ -20,7 +20,7 @@ end
 
 --local GuiLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/67b00fcff6b14ba1cbdeed00fa58fee13af7677d/OldGuiLibrary.lua", true))()
 --local GuiLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/InkognoitoCurry/Swift-V4/06d608d99be1a04f1243b1ff64b26b7e64ba6a36/OldGuiLibrary.lua", true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/InkognitoCurry/Swift-V4/OldScript/OldGuiLibrary.lua", true))()
+local GuiLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/InkognitoCurry/Swift-V4/OldScript/OldGuiLibrary.lua", true))()
 shared.GuiLibrary = GuiLibrary
 local workspace = game:GetService("Workspace")
 local cam = workspace.CurrentCamera
