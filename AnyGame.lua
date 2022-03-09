@@ -1,4 +1,4 @@
--- Credits to Inf Yield & all the other scripts that helped me make bypasses
+-- Full Credits to 7GrandDadPGN 
 local GuiLibrary = shared.GuiLibrary
 local players = game:GetService("Players")
 local textservice = game:GetService("TextService")
