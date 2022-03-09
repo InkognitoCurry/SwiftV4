@@ -58,7 +58,8 @@ local function getcustomassetfunc(path)
 			textlabel:Remove()
 		end)
 		local req = requestfunc({
-			Url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
+			--Url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
+			Url = "https://raw.githubusercontent.com/InkognitoCurry/Vape-v4/main"..path:gsub("vape/assets", "assets"),
 			Method = "GET"
 		})
 		writefile(path, req.Body)
@@ -672,7 +673,7 @@ killauraaps = Killaura.CreateTwoSlider({
 	["Name"] = "attacks per second. 2 or 3 will seem legit for an enemy. !! 20 is script default, 50 is highest possible !!",
 	["Min"] = 1,
 	["Max"] = 50,
-	["Default"] = 8,
+	["Default"] = 50,
 	["Default2"] = 12
 })
 killaurarange = Killaura.CreateSlider({
@@ -686,7 +687,7 @@ killauraangle = Killaura.CreateSlider({
 	["Min"] = 1,
 	["Max"] = 360, 
 	["Function"] = function(val) end,
-	["Default"] = 90
+	["Default"] = 360
 })
 killauramouse = Killaura.CreateToggle({
 	["Name"] = "Require mouse down", 
