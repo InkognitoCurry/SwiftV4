@@ -26,16 +26,17 @@ local workspace = game:GetService("Workspace")
 local cam = workspace.CurrentCamera
 local selfdestruct = false
 local GUI = GuiLibrary.CreateWindow("GUI", "🖥", UDim2.new(0, 6, 0, 6), true)
-local Combat = GuiLibrary.CreateWindow("Combat", "⚔", UDim2.new(0, 177, 0, 6), false)
-local Blatant = GuiLibrary.CreateWindow("Blatant", "⚠", UDim2.new(0, 177, 0, 6), false)
-local Render = GuiLibrary.CreateWindow("Render", "👁", UDim2.new(0, 177, 0, 6), false)
-local Utility = GuiLibrary.CreateWindow("Utility", "🛠", UDim2.new(0, 177, 0, 6), false)
-local World = GuiLibrary.CreateWindow("World", "🌎", UDim2.new(0, 177, 0, 6), false)
-local Other = GuiLibrary.CreateWindow("Other", "❔", UDim2.new(0, 177, 0, 6), false)
-local Settings = GuiLibrary.CreateWindow("Settings", "⚙", UDim2.new), false)
+local Combat = GuiLibrary.CreateWindow("Combat", "⚔", UDim2.new(0, 177, 0, 6), true)
+local Blatant = GuiLibrary.CreateWindow("Blatant", "⚠", UDim2.new(0, 177, 0, 6), true)
+local Render = GuiLibrary.CreateWindow("Render", "👁", UDim2.new(0, 177, 0, 6), true)
+local Utility = GuiLibrary.CreateWindow("Utility", "🛠", UDim2.new(0, 177, 0, 6), true)
+local World = GuiLibrary.CreateWindow("World", "🌎", UDim2.new(0, 177, 0, 6), true)
+local Other = GuiLibrary.CreateWindow("Other", "❔", UDim2.new(0, 177, 0, 6), true)
+local Settings = GuiLibrary.CreateWindow("Settings", "⚙", UDim2.new(0, 177, 0, 6), true)
 local Friends = GuiLibrary.CreateWindow("Friends", "👨‍👦", UDim2.new(0, 177, 0, 6), false)
-local Search = GuiLibrary.CreateWindow("Search", "🔍", UDim2.new(0, 177, 0, 6), false)
-local TextGui = GuiLibrary.CreateCustomWindow("Text GUI", "📄", UDim2.new(0, 177, 0, 6), false)
+local Search = GuiLibrary.CreateWindow("Search", "🔍", UDim2.new(0, 177, 0, 6), true)
+--local TextGui = GuiLibrary.CreateCustomWindow("Text GUI", "📄", UDim2.new(0, 177, 0, 6), false)
+local TextGui = GuiLibrary.CreateCustomWindow("amogus", "�", UDim2.new(0, 177, 0, 6), true)
 
 local rainbowval = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromHSV(0, 0, 1)), ColorSequenceKeypoint.new(1, Color3.fromHSV(0, 0, 1))})
 local rainbowval2 = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromHSV(0, 0, 0.42)), ColorSequenceKeypoint.new(1, Color3.fromHSV(0, 0, 0.42))})
@@ -97,7 +98,8 @@ onething.BackgroundColor3 = Color3.new(0, 0, 0)
 onething.BorderSizePixel = 0
 onething.BackgroundTransparency = 1
 onething.Visible = false
-onething.Image = "http://www.roblox.com/asset/?id=5093061259"
+--onething.Image = "http://www.roblox.com/asset/?id=5093061259"
+onething.Image = "http://www.roblox.com/asset/?id=7006733820"
 local onething2 = Instance.new("ImageLabel")
 onething2.Parent = onething
 onething2.Size = UDim2.new(0, 77, 0, 32)
@@ -105,7 +107,9 @@ onething2.Position = UDim2.new(1, 0, 0, 0)
 onething2.BorderSizePixel = 0
 onething2.BackgroundColor3 = Color3.new(0, 0, 0)
 onething2.BackgroundTransparency = 1
-onething2.Image = "http://www.roblox.com/asset/?id=5093114878"
+
+--onething2.Image = "http://www.roblox.com/asset/?id=5093114878"
+onething2.Image = "http://www.roblox.com/asset/?id=7006733820"
 local onetext = Instance.new("TextLabel")
 onetext.Parent = TextGui.GetCustomChildren()
 onetext.Size = UDim2.new(1, 0, 1, 0)
